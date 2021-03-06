@@ -1,0 +1,31 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background: #101010;
+}
+.earth{
+	position: absolute;
+	width: 260px;
+	height: 260px;
+	background: url(../img/earth.jpg);
+	background-size: cover;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	filter:drop-shadow(0 0 25px #0F4C81);
+	animation: spin 20s linear infinite;
+	box-shadow: inset -32px -31px 31px -8px rgba(0,0,0,0.75);
+
+}
+@keyframes spin {
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position:166.5%;
+	}
+}
